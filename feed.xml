@@ -1,0 +1,821 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Apache Cordova</title>
+    <description>Apache Cordova is a set of device APIs that allow a web mobile app developer to access native device function from JavaScript.
+</description>
+    <link>https://cordova.apache.org/</link>
+    <atom:link href="https://cordova.apache.org/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 15 Dec 2020 09:24:13 +0000</pubDate>
+    <lastBuildDate>Tue, 15 Dec 2020 09:24:13 +0000</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Security Advisory CVE-2020-11990</title>
+        <description>&lt;p&gt;We have resolved a security issue in the camera plugin that could have affected certain Cordova (Android) applications.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;CVE-2020-11990:&lt;/strong&gt; Apache Cordova Plugin camera vulnerable to information disclosure&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Type of Vulnerability:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;CWE-200: Exposure of Sensitive Information to an Unauthorized Actor&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Severity:&lt;/strong&gt; Low&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Vendor:&lt;/strong&gt; The Apache Software Foundation&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Possible attackers condition:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;An attacker who can install (or lead the victim to install) the specially crafted (or malicious) Android application. Android documentation describes the external cache location as application specific, however,
+&lt;em&gt;&amp;quot;There is no security enforced with these files. For example, any application holding Manifest.permission.WRITE&lt;/em&gt;EXTERNAL&lt;em&gt;STORAGE can write to these files.&amp;quot;&lt;/em&gt;
+( and thereby read )&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Possible victims:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Android users that take pictures with an Apache Cordova based application and attached removable storage.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Possible Impacts:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Confidentiality is breached.&lt;/li&gt;
+&lt;li&gt;The image file (photo) taken by the Android apps that was developed using the Apache Cordova camera plugin will be disclosed.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Versions Affected:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Cordova Android applications using the Camera plugin&lt;/p&gt;
+
+&lt;p&gt;( cordova-plugin-camera version 4.1.0 and below )&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Upgrade path:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Developers who are concerned about this issue should install version 5.0.0 or higher of cordova-plugin-camera&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Mitigation Steps:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Upgrade plugin and rebuild application, update deployments.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Credit:&lt;/strong&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;[Edit: Changed credit to individual]&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Akihiro Matsumura of Saison Information Systems Co., Ltd.&lt;/strong&gt; reported this vulnerability to IPA.&lt;/p&gt;
+
+&lt;p&gt;JPCERT/CC coordinated with the developer under Information Security Early Warning Partnership.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;[Edit: Added links to JPCERT/CC advisory ]&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://jvn.jp/jp/JVN59779918/&quot;&gt;JVN#59779918 (Japanese)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://jvn.jp/en/jp/JVN59779918/&quot;&gt;JVN#59779918 (English)&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 30 Nov 2020 00:00:00 +0000</pubDate>
+        <link>https://cordova.apache.org/news/2020/11/30/cve-2020-11990.html</link>
+        <guid isPermaLink="true">https://cordova.apache.org/news/2020/11/30/cve-2020-11990.html</guid>
+        
+        <category>security</category>
+        
+        <category>advisory</category>
+        
+        
+        <category>news</category>
+        
+      </item>
+    
+      <item>
+        <title>Cordova Electron 2.0.0 Released!</title>
+        <description>&lt;p&gt;We are happy to announce that we have just released &lt;code&gt;Cordova Electron 2.0.0&lt;/code&gt;!  This is one of Cordova&amp;#39;s supported platforms for building Electron applications.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/cordova-electron&quot;&gt;cordova-electron@2.0.0&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Release Highlights&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;To upgrade:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;cordova platform remove electron
+cordova platform add electron@2.0.0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;To install:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;cordova platform add electron@2.0.0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Some of the notable breaking changes &amp;amp; new features in this release are:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The &lt;strong&gt;Electron&lt;/strong&gt; core dependencies have been updated.
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Electron&lt;/strong&gt;: 10.1.2&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Chromium&lt;/strong&gt;: 85.0.4183.98&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Node&lt;/strong&gt;: v12.16.3&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;V8&lt;/strong&gt;: v8.5&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;NodeJS&lt;/strong&gt; 6 and 8 is no longer supported. This release requires the development environment to have &lt;strong&gt;NodeJS&lt;/strong&gt; 10.x or higher. It is recommended to use the current LTS, which is &lt;code&gt;12.18.4&lt;/code&gt; at the time of this release.&lt;/li&gt;
+&lt;li&gt;DevTool extensions can now be added to debug builds to improve debugging capabilities. &lt;a href=&quot;https://github.com/apache/cordova-electron/pull/160&quot;&gt;GH-160&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Support for using the custom &lt;code&gt;scheme&lt;/code&gt; and &lt;code&gt;hostname&lt;/code&gt; &lt;code&gt;preference&lt;/code&gt; flags is now available. It can be easily configured in your Cordova project by setting the preference options &lt;code&gt;scheme&lt;/code&gt; and &lt;code&gt;hostname&lt;/code&gt; in the &lt;code&gt;config.xml&lt;/code&gt; file.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;preference&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;scheme&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;app&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;preference&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;hostname&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;localhost&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Support passing of &lt;strong&gt;Electron&lt;/strong&gt; arguments to the &lt;code&gt;cordova run&lt;/code&gt; command. This is useful to pass the inspect flag to debug the main process.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For a quick start guide and in-depth configuration setup, please check out our &lt;a href=&quot;https://github.com/apache/cordova-electron/blob/rel/2.0.0/DOCUMENTATION.md&quot;&gt;Cordova Electron Documentation&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;Please report any issues you find at &lt;a href=&quot;http://issues.cordova.io/&quot;&gt;issues.cordova.io&lt;/a&gt;!&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h1&gt;Changes include:&lt;/h1&gt;
+
+&lt;h2&gt;Project Dependencies&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;cordova-common@^4.0.2&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;electron@10.1.2&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;electron-builder@^22.8.1&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;electron-devtools-installer@^3.1.1&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;execa@^4.0.3&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;fs-extra@^9.0.1&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Breaking Changes&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-electron/pull/162&quot;&gt;GH-162&lt;/a&gt; breaking: use platform config parser&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-electron/pull/152&quot;&gt;GH-152&lt;/a&gt; breaking: bump &lt;code&gt;electron&lt;/code&gt; &amp;amp; &lt;code&gt;electron-builder&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-electron/pull/151&quot;&gt;GH-151&lt;/a&gt; breaking: bump &lt;code&gt;cordova-common@4.0.1&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-electron/pull/145&quot;&gt;GH-145&lt;/a&gt; breaking(&lt;code&gt;npm&lt;/code&gt;): update dependencies&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-electron/pull/142&quot;&gt;GH-142&lt;/a&gt; breaking: restructure the platform lib code&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-electron/pull/138&quot;&gt;GH-138&lt;/a&gt; breaking: remove platform-centered workflow&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-electron/pull/69&quot;&gt;GH-69&lt;/a&gt; breaking: drop &lt;code&gt;node&lt;/code&gt; 6 and 8 support&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Features&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-electron/pull/160&quot;&gt;GH-160&lt;/a&gt; feat: install devtool extensions for debug builds&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-electron/pull/154&quot;&gt;GH-154&lt;/a&gt; feature: support custom &lt;code&gt;scheme&lt;/code&gt; &amp;amp; &lt;code&gt;hostname&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-electron/pull/148&quot;&gt;GH-148&lt;/a&gt; feat: support &lt;strong&gt;Electron&lt;/strong&gt; arguments on run command&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-electron/pull/112&quot;&gt;GH-112&lt;/a&gt; feat: move ci to gh-actions&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-electron/pull/81&quot;&gt;GH-81&lt;/a&gt; feat: Support Loading Local HTML Files or Remote URL in the &lt;code&gt;BrowserWindow&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Refactor&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-electron/pull/156&quot;&gt;GH-156&lt;/a&gt; refactor: remove more platform-centered files &amp;amp; update code&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-electron/pull/153&quot;&gt;GH-153&lt;/a&gt; refactor: cleanup unused code&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-electron/pull/129&quot;&gt;GH-129&lt;/a&gt; refactor (&lt;code&gt;create&lt;/code&gt;): simplify project creation&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-electron/pull/124&quot;&gt;GH-124&lt;/a&gt; refactor: transform &lt;code&gt;for&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-electron/pull/123&quot;&gt;GH-123&lt;/a&gt; refactor: transform &lt;code&gt;template&lt;/code&gt; strings&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-electron/pull/122&quot;&gt;GH-122&lt;/a&gt; refactor: transform &lt;code&gt;object&lt;/code&gt; shorthand&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-electron/pull/121&quot;&gt;GH-121&lt;/a&gt; refactor: transform &lt;code&gt;arrow&lt;/code&gt; functions &amp;amp; &lt;code&gt;arrow&lt;/code&gt; returns&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-electron/pull/120&quot;&gt;GH-120&lt;/a&gt; refactor: transform &lt;code&gt;var&lt;/code&gt; to &lt;code&gt;let&lt;/code&gt;/&lt;code&gt;const&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-electron/pull/116&quot;&gt;GH-116&lt;/a&gt; refactor: remove &lt;code&gt;shelljs&lt;/code&gt; and update tests&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-electron/pull/118&quot;&gt;GH-118&lt;/a&gt; refator: replace &lt;code&gt;shelljs&lt;/code&gt;/&lt;code&gt;spawn&lt;/code&gt; with &lt;code&gt;execa&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-electron/pull/113&quot;&gt;GH-113&lt;/a&gt; refactor: &lt;code&gt;eslint&lt;/code&gt; setup&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Fix&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-electron/pull/158&quot;&gt;GH-158&lt;/a&gt; fix(build): format &lt;code&gt;top-level&lt;/code&gt; key for &lt;code&gt;nsis-web&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-electron/pull/136&quot;&gt;GH-136&lt;/a&gt; fix(npm-script): prepack&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Chore, CI, &amp;amp; Test&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-electron/pull/168&quot;&gt;GH-168&lt;/a&gt; chore: bump dependencies &amp;amp; related usage&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-electron/pull/165&quot;&gt;GH-165&lt;/a&gt; chore: bump dependencies to latest&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-electron/pull/164&quot;&gt;GH-164&lt;/a&gt; chore: bump &lt;strong&gt;Electron&lt;/strong&gt; related dependencies&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-electron/pull/147&quot;&gt;GH-147&lt;/a&gt; chore: various cleanup&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-electron/pull/144&quot;&gt;GH-144&lt;/a&gt; chore(npm): bump &lt;code&gt;@cordova/eslint-config@^3.0.0&lt;/code&gt; w/ lint fix&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-electron/pull/125&quot;&gt;GH-125&lt;/a&gt; chore: configure app rel dependencies as abs paths&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-electron/pull/117&quot;&gt;GH-117&lt;/a&gt; chore: update &lt;strong&gt;Electron&lt;/strong&gt; dependencies&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-electron/pull/128&quot;&gt;GH-128&lt;/a&gt; chore: update &lt;code&gt;package.json&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-electron/pull/114&quot;&gt;GH-114&lt;/a&gt; chore: update &lt;code&gt;jasmine&lt;/code&gt; dependency&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-electron/pull/110&quot;&gt;GH-110&lt;/a&gt; chore: bump version to 2.0.0-dev&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-electron/pull/96&quot;&gt;GH-96&lt;/a&gt; chore: fix typo&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-electron/pull/67&quot;&gt;GH-67&lt;/a&gt; chore: update development dependencies&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-electron/pull/68&quot;&gt;GH-68&lt;/a&gt; chore: bump &lt;strong&gt;Electron&lt;/strong&gt; dependencies&lt;/li&gt;
+&lt;li&gt;chore(asf): update git notification settings&lt;/li&gt;
+&lt;li&gt;Update CONTRIBUTING.md&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-electron/pull/157&quot;&gt;GH-157&lt;/a&gt; ci: add node 14 to workflow&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-electron/pull/146&quot;&gt;GH-146&lt;/a&gt; ci: update workflow&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-electron/pull/141&quot;&gt;GH-141&lt;/a&gt; test (node-12.16.x): fix failures caused by shebang and rewire lint&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-electron/pull/131&quot;&gt;GH-131&lt;/a&gt; test: refactor with minor fixes &amp;amp; improvements&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Fri, 02 Oct 2020 00:00:00 +0000</pubDate>
+        <link>https://cordova.apache.org/announcements/2020/10/02/cordova-electron-release-2.0.0.html</link>
+        <guid isPermaLink="true">https://cordova.apache.org/announcements/2020/10/02/cordova-electron-release-2.0.0.html</guid>
+        
+        <category>news</category>
+        
+        <category>releases</category>
+        
+        
+        <category>announcements</category>
+        
+      </item>
+    
+      <item>
+        <title>Security Advisory CVE-2020-6506</title>
+        <description>&lt;h3&gt;Formally Disclosed Advisory:&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://bugs.chromium.org/p/chromium/issues/detail?id=1083819&quot;&gt;https://bugs.chromium.org/p/chromium/issues/detail?id=1083819&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This vulnerability is a universal cross-site scripting (UXSS) vulnerability in Android WebView which allows cross-origin iframes to execute arbitrary JavaScript in the top-level document.  Apache Cordova apps built for Android devices which allow the loading of http content from domains they do not control could be affected.  Theoretically this would be either in an iframe, or by use of the InAppBrowser plugin (cordova-plugin-inappbrowser).&lt;/p&gt;
+
+&lt;p&gt;If your app loads a local page (e.g. index.html within Cordova app loads iframe from &lt;a href=&quot;#&quot;&gt;malicious-example.com&lt;/a&gt;), no user interaction is required for this exploit.&lt;/p&gt;
+
+&lt;p&gt;This vulnerability has been fixed in Android WebView as of version 83.0.4103.106.
+Users must update their Android WebView from the Google Play Store themselves.&lt;/p&gt;
+
+&lt;h3&gt;Mitigation&lt;/h3&gt;
+
+&lt;p&gt;There are precautions you can take to avoid this vulnerability.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Use a restrictive an allow-list and content security policy (CSP) as possible.&lt;br&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-whitelist/&quot;&gt;https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-whitelist/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Ensure CSPs do not include &amp;#39;unsafe-line&amp;#39; for script-src/default-src unless necessary.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Generally, always load local code into your application&amp;#39;s main webview, and use InAppBrowser to display anything remote.
+
+&lt;ul&gt;
+&lt;li&gt;Always load untrusted content into an external browser (i.e. call InAppBrowser with &lt;code&gt;_system&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-inappbrowser/&quot;&gt;https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-inappbrowser/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Do not use iframes, and if you must, never do so in your application&amp;#39;s main webview. Using the &lt;code&gt;sandbox&lt;/code&gt; attribute will mitigate this vulnerability ( preferably with an empty value. ) Avoid using these sandbox attributes together &lt;code&gt;allow-popups allow-top-navigation allow-scripts&lt;/code&gt; because they do NOT mitigate this vulnerability.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;iframe&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;sandbox&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;&#39;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;http://untrusted-source&#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Most of these precautions have always been gentle recommendations of Apache Cordova, but were not reflected in the default values which were typically left open. The Apache Cordova committers are investigating preventing this vulnerability at the framework level, as well as tightening the default values to prevent inadvertant exposure. In the meantime, if you suspect your app is vulnerable, please follow the precautions above.&lt;/p&gt;
+
+&lt;p&gt;Credit ( and thanks ) go to Alesandro Ortiz for discovering this vulnerability and bringing it to our attention.&lt;/p&gt;
+
+&lt;h3&gt;Additional References&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://alesandroortiz.com/articles/uxss-android-webview-cve-2020-6506/&quot;&gt;https://alesandroortiz.com/articles/uxss-android-webview-cve-2020-6506/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://nvd.nist.gov/vuln/detail/CVE-2020-6506&quot;&gt;https://nvd.nist.gov/vuln/detail/CVE-2020-6506&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;edit: fixed links that weren&amp;#39;t linking&lt;/em&gt; -JM&lt;/p&gt;
+</description>
+        <pubDate>Tue, 29 Sep 2020 00:00:00 +0000</pubDate>
+        <link>https://cordova.apache.org/news/2020/09/29/cve-2020-6506.html</link>
+        <guid isPermaLink="true">https://cordova.apache.org/news/2020/09/29/cve-2020-6506.html</guid>
+        
+        <category>security</category>
+        
+        <category>advisory</category>
+        
+        
+        <category>news</category>
+        
+      </item>
+    
+      <item>
+        <title>Camera Plugin Released!</title>
+        <description>&lt;p&gt;We are happy to announce that we have just released an update to our camera plugin!&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.npmjs.org/package/cordova-plugin-camera&quot;&gt;cordova-plugin-camera@5.0.0&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Release Highlights&lt;/h2&gt;
+
+&lt;p&gt;In this major release, we have:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;removed the &lt;code&gt;DestinationType&lt;/code&gt; of &lt;code&gt;NATIVE_URI&lt;/code&gt; that was used only in the iOS and Windows platform. For iOS, the &lt;code&gt;NATIVE_URI&lt;/code&gt; returned an &lt;code&gt;ALAssetsLibrary&lt;/code&gt; that had been deprecated and does not work with the &lt;code&gt;WKWevView&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;removed the &lt;code&gt;CordovaUri&lt;/code&gt; class helper that used fuzzy logic to guess the image path from the content URL. This process was not necessary as we know the file path beforehand.&lt;/li&gt;
+&lt;li&gt;bumped the project requirement definition. This plugin version requires Cordova CLI &amp;gt;= 9.0.0. If building for Android, this plugin version will also require the Cordova Android platform &amp;gt;= 9.0.0.&lt;/li&gt;
+&lt;li&gt;changed the location of the temporary saved images from external to internal cache.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!--more--&gt;
+
+&lt;h1&gt;Changes include:&lt;/h1&gt;
+
+&lt;h2&gt;Breaking&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-plugin-camera/pull/637&quot;&gt;GH-637&lt;/a&gt; breaking: remove &lt;code&gt;NATIVE_URI&lt;/code&gt; DestinationType&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-plugin-camera/pull/628&quot;&gt;GH-628&lt;/a&gt; breaking: bump project requirements&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-plugin-camera/pull/627&quot;&gt;GH-627&lt;/a&gt; breaking: bump version 5.0.0-dev&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-plugin-camera/pull/617&quot;&gt;GH-617&lt;/a&gt; breaking(android): stop using &lt;code&gt;CordovaUri&lt;/code&gt; helper class&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Feature&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-plugin-camera/pull/629&quot;&gt;GH-629&lt;/a&gt; feat: migrate to &lt;code&gt;@cordova/eslint-config@3.x&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-plugin-camera/pull/588&quot;&gt;GH-588&lt;/a&gt; feat(android): Cache images in device storage, devices have enough space now.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Fix&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-plugin-camera/pull/632&quot;&gt;GH-632&lt;/a&gt; fix(android): return error if file url is null&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-plugin-camera/pull/510&quot;&gt;GH-510&lt;/a&gt; fix(android): use provider prefix to avoid conflicts other plugin providers&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-plugin-camera/pull/612&quot;&gt;GH-612&lt;/a&gt; fix(ios): &lt;code&gt;tempFilePath&lt;/code&gt; called twice if using &lt;code&gt;CameraUsesGeolocation&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-plugin-camera/pull/580&quot;&gt;GH-580&lt;/a&gt; fix(ios): return copy of video when picking from gallery on iOS 13&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-plugin-camera/pull/551&quot;&gt;GH-551&lt;/a&gt; fix: UI API called on a background thread (&lt;a href=&quot;https://github.com/apache/cordova-plugin-camera/pull/550&quot;&gt;#550&lt;/a&gt;, &lt;a href=&quot;https://github.com/apache/cordova-plugin-camera/pull/530&quot;&gt;#530&lt;/a&gt;, &lt;a href=&quot;https://github.com/apache/cordova-plugin-camera/pull/447&quot;&gt;#447&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-plugin-camera/pull/306&quot;&gt;GH-306&lt;/a&gt; fix: ImagePicker returning same image&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Chore&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-plugin-camera/pull/634&quot;&gt;GH-634&lt;/a&gt; chore: remove deprecated &lt;code&gt;file-transfer&lt;/code&gt; plugin&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-plugin-camera/pull/630&quot;&gt;GH-630&lt;/a&gt; chore: add &lt;code&gt;package-lock.json&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-plugin-camera/pull/631&quot;&gt;GH-631&lt;/a&gt; chore(package): use short notation&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-plugin-camera/pull/575&quot;&gt;GH-575&lt;/a&gt; chore(npm): adds ignore list&lt;/li&gt;
+&lt;li&gt;chore(asf): update git notification settings&lt;/li&gt;
+&lt;li&gt;chore: Update CONTRIBUTING.md&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;CI&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-plugin-camera/pull/648&quot;&gt;GH-648&lt;/a&gt; ci(travis): update osx xcode image&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-plugin-camera/pull/626&quot;&gt;GH-626&lt;/a&gt; ci: fix additional tests&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-plugin-camera/pull/576&quot;&gt;GH-576&lt;/a&gt; ci: updates Node.js versions&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1&gt;Docs&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-plugin-camera/pull/508&quot;&gt;GH-508&lt;/a&gt; docs(readme): app renamed to Google Photos&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-plugin-camera/pull/513&quot;&gt;GH-513&lt;/a&gt; docs(README): remove confusing comment&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-plugin-camera/pull/512&quot;&gt;GH-512&lt;/a&gt; docs(README): remove orphan Windows phone 7 note&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Fri, 18 Sep 2020 00:00:00 +0000</pubDate>
+        <link>https://cordova.apache.org/news/2020/09/18/camera-plugin-release.html</link>
+        <guid isPermaLink="true">https://cordova.apache.org/news/2020/09/18/camera-plugin-release.html</guid>
+        
+        <category>release</category>
+        
+        <category>plugins</category>
+        
+        
+        <category>news</category>
+        
+      </item>
+    
+      <item>
+        <title>Cordova iOS 6.1.1 Released!</title>
+        <description>&lt;p&gt;We are happy to announce that we have just released &lt;code&gt;Cordova iOS 6.1.1&lt;/code&gt;! This is Cordova&amp;#39;s official platform for building iOS mobile applications.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/cordova-ios&quot;&gt;cordova-ios@6.1.1 on npm&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://cocoapods.org/pods/Cordova&quot;&gt;Cordova@6.1.1 on CocoaPods&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;To upgrade:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;cordova platform remove ios
+cordova platform add ios@6.1.1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Release Highlights&lt;/h2&gt;
+
+&lt;p&gt;This release contains primarily a fix for deploying to devices, as well as an update to the cordova-common library which we hope will address several issues around &lt;code&gt;Info.plist&lt;/code&gt; modifications.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Resolve deploying to a connected device&lt;/strong&gt; &lt;em&gt;(since 6.0.0)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The Cordova iOS 6.0.0 release was unable to deploy apps to connected iPhone and iPad devices. Thanks to first-time contributor imgos for tracking down the source of the problem and providing a fix.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Fix for identifying the correct &lt;code&gt;Info.plist&lt;/code&gt; file&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;This has been a long-standing pain point for Cordova iOS users, particularly when plugins attempt to use &lt;code&gt;edit-config&lt;/code&gt; or &lt;code&gt;config-file&lt;/code&gt; to add directives to the &lt;code&gt;Info.plist&lt;/code&gt; file. In some cases, depending on which plugins and CocoaPods were installed, those config changes would end up in the wrong plist file.&lt;/p&gt;
+
+&lt;p&gt;This issue was fixed in Cordova Common 4.0.2, and we&amp;#39;ve pulled that dependency into this release.  More details can be found in the &lt;a href=&quot;https://github.com/apache/cordova-common/pull/148&quot;&gt;pull request&lt;/a&gt; and &lt;a href=&quot;https://github.com/apache/cordova-common/issues/144&quot;&gt;original bug ticket&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Append &lt;code&gt;startURL&lt;/code&gt; to the initial URL when using custom schemes&lt;/strong&gt; &lt;em&gt;(since 6.0.0)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;When using a custom scheme in Cordova iOS 6.0.0 and a &lt;code&gt;config.xml&lt;/code&gt; &lt;code&gt;content&lt;/code&gt; path that pointed to a subfolder of &lt;code&gt;www&lt;/code&gt;, that subfolder would be treated as the root of the custom scheme.  While this is not a common situation, it turns out that is how the &lt;a href=&quot;https://github.com/apache/cordova-mobile-spec&quot;&gt;mobilespec&lt;/a&gt; test suite is implemented.&lt;/p&gt;
+
+&lt;p&gt;The fix here is that the root of the custom scheme will always map to the &lt;code&gt;www&lt;/code&gt; folder. More details can be found in the &lt;a href=&quot;https://github.com/apache/cordova-ios/pull/973&quot;&gt;pull request&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Please report any issues you find at &lt;a href=&quot;http://issues.cordova.io/&quot;&gt;issues.cordova.io&lt;/a&gt;!&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h2&gt;Full Changelog&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-ios/pull/976&quot;&gt;GH-976&lt;/a&gt; Update npm dependencies to pull in &lt;code&gt;cordova-common@4.0.2&lt;/code&gt;
+
+&lt;ul&gt;
+&lt;li&gt;This should resolve several issues affecting Info.plist files, including &lt;a href=&quot;https://github.com/apache/cordova-ios/issues/764&quot;&gt;#764&lt;/a&gt; and &lt;a href=&quot;https://github.com/apache/cordova-ios/issues/775&quot;&gt;#775&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-ios/pull/973&quot;&gt;GH-973&lt;/a&gt; Append &lt;code&gt;startURL&lt;/code&gt; to the initial url loaded&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-ios/issues/912&quot;&gt;GH-912&lt;/a&gt; fix deployment to device (&lt;a href=&quot;https://github.com/apache/cordova-ios/pull/936&quot;&gt;#936&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-ios/pull/932&quot;&gt;GH-932&lt;/a&gt; add node 14 to CI workflow&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Mon, 31 Aug 2020 00:00:00 +0000</pubDate>
+        <link>https://cordova.apache.org/announcements/2020/08/31/cordova-ios-6.1.1.html</link>
+        <guid isPermaLink="true">https://cordova.apache.org/announcements/2020/08/31/cordova-ios-6.1.1.html</guid>
+        
+        <category>news</category>
+        
+        <category>releases</category>
+        
+        
+        <category>announcements</category>
+        
+      </item>
+    
+      <item>
+        <title>Goodbye PhoneGap</title>
+        <description>&lt;h2&gt;Goodbye PhoneGap&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.adobe.com/&quot;&gt;Adobe&lt;/a&gt; recently &lt;a href=&quot;https://blog.phonegap.com/update-for-customers-using-phonegap-and-phonegap-build-cc701c77502c&quot;&gt;announced&lt;/a&gt; that &lt;a href=&quot;https://phonegap.com/&quot;&gt;PhoneGap&lt;/a&gt; is shutting down. How is Cordova affected? In short: not much. &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Rest assured, Apache Cordova is still active and maintained!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;We want to take this opportunity to thank Adobe and the PhoneGap team for all the blood, sweat, and tears they have put forward into designing and building these tools, services, and community. Without them, hybrid mobile apps would not be the same.&lt;/p&gt;
+
+&lt;p&gt;Today, we are in the fortunate position that Cordova is an Open Source Software, which is entirely maintained by the community. PhoneGap originally started as an open-source project by Nitobi Software in 2008. Nitobi Software was acquired by Adobe in 2011 and shortly after donated PhoneGap to the &lt;a href=&quot;https://apache.org/&quot;&gt;Apache Software Foundation&lt;/a&gt; as Cordova. Apache Cordova, which was a core tool of Adobe PhoneGap and PhoneGap Build for the past nine years, will continue to thrive as long as the health of the community remains strong and contributions are made. If you use, have used, or looking to start using Cordova, also consider contributing and taking part in this awesome community to help it grow.&lt;/p&gt;
+
+&lt;p&gt;We, the community, and contributors of Apache Cordova would like to sincerely thank Adobe and all of the PhoneGap team members for everything you have put into this hybrid mobile community and sharing Cordova to the Apache Software Foundation so it can continue to grow and prosper.&lt;/p&gt;
+
+&lt;p&gt;The Contributors of Apache Cordova&lt;/p&gt;
+</description>
+        <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
+        <link>https://cordova.apache.org/announcements/2020/08/14/goodbye-phonegap.html</link>
+        <guid isPermaLink="true">https://cordova.apache.org/announcements/2020/08/14/goodbye-phonegap.html</guid>
+        
+        <category>news</category>
+        
+        
+        <category>announcements</category>
+        
+      </item>
+    
+      <item>
+        <title>Cordova CLI 10.0.0 Released!</title>
+        <description>&lt;p&gt;We are happy to announce that we have just released &lt;code&gt;cordova 10.0.0&lt;/code&gt;!&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/cordova&quot;&gt;cordova@10.0.0&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;To upgrade:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;npm uninstall &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; cordova
+npm install &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; cordova@10.0.0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Release Highlights&lt;/h2&gt;
+
+&lt;p&gt;In addition to various improvements and fixes, this release has updated its core library.&lt;/p&gt;
+
+&lt;p&gt;The follow platforms have been updated to the latest pinning.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;cordova-android@^9.0.0&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cordova-ios@^6.1.0&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cordova-osx@^6.0.0&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In addition, this release has also:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Removed the &lt;code&gt;plugin save&lt;/code&gt; command, which had become the default behaviour since version 7.0.&lt;/li&gt;
+&lt;li&gt;Improved &lt;code&gt;cordova info&lt;/code&gt; display.&lt;/li&gt;
+&lt;li&gt;Raised the minimum required NodeJS version for this release to 10.x.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Please report any issues you find at &lt;a href=&quot;http://issues.cordova.io/&quot;&gt;issues.cordova.io&lt;/a&gt;!&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h1&gt;Changes include:&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-cli/pull/521&quot;&gt;GH-521&lt;/a&gt; test: fix node.js version check&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-cli/pull/520&quot;&gt;GH-520&lt;/a&gt; chore: rebuilt &lt;code&gt;package-lock&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-cli/pull/519&quot;&gt;GH-519&lt;/a&gt; breaking: bump &lt;code&gt;cordova-lib@^10.0.0&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-cli/pull/402&quot;&gt;GH-402&lt;/a&gt; Tiny CLI docs improvements&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-cli/pull/518&quot;&gt;GH-518&lt;/a&gt; feat(ci): migrate to &lt;code&gt;github-actions&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-cli/pull/516&quot;&gt;GH-516&lt;/a&gt; chore: drop &lt;code&gt;node-8&lt;/code&gt; deprecation transition step&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-cli/pull/517&quot;&gt;GH-517&lt;/a&gt; chore: add &lt;code&gt;package-lock.json&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-cli/pull/515&quot;&gt;GH-515&lt;/a&gt; chore: improve npm ignore&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-cli/pull/513&quot;&gt;GH-513&lt;/a&gt; breaking: bump dev dependencies
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;mock-stdin@^1.0.0&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;nyc@^15.1.0&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;rewire@^5.0.0&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-cli/pull/514&quot;&gt;GH-514&lt;/a&gt; chore: cleanup &lt;code&gt;package.json&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-cli/pull/512&quot;&gt;GH-512&lt;/a&gt; breaking: bump dependencies
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;configstored@^5.0.1&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cordova-commond@^4.0.2&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cordova-created@^3.0.0&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cordova-libd@^9.0.1&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;execad@^4.0.3&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;insightd@^0.10.3&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;loud-rejectiond@^2.2.0&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;noptd@^4.0.3&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;semverd@^7.3.2&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;systeminformationd@^4.26.10&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;update-notifierd@^4.1.0&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-cli/pull/511&quot;&gt;GH-511&lt;/a&gt; chore(&lt;code&gt;eslint&lt;/code&gt;): bump to 3.0.0 w/ fix&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-cli/pull/510&quot;&gt;GH-510&lt;/a&gt; feat: migrate &amp;quot;&lt;code&gt;cordova info&lt;/code&gt;&amp;quot; lib logic to cli&lt;/li&gt;
+&lt;li&gt;chore(asf): update git notification settings&lt;/li&gt;
+&lt;li&gt;Update CONTRIBUTING.md&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-cli/pull/495&quot;&gt;GH-495&lt;/a&gt; fix: cannot call &lt;code&gt;config&lt;/code&gt; or &lt;code&gt;create&lt;/code&gt; commands&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-cli/pull/494&quot;&gt;GH-494&lt;/a&gt; refactor(&lt;code&gt;create&lt;/code&gt;): use &lt;code&gt;cordova-create&lt;/code&gt; 3.0.0-nightly&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-cli/pull/493&quot;&gt;GH-493&lt;/a&gt; refactor: &lt;code&gt;eslint&lt;/code&gt; setup&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-cli/pull/490&quot;&gt;GH-490&lt;/a&gt; refactor(&lt;code&gt;create&lt;/code&gt;): do not expand &lt;code&gt;~&lt;/code&gt; to &lt;code&gt;$HOME&lt;/code&gt; anymore&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-cli/pull/489&quot;&gt;GH-489&lt;/a&gt; refactor(&lt;code&gt;create&lt;/code&gt;): depend directly on &lt;code&gt;cordova-create&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-cli/pull/485&quot;&gt;GH-485&lt;/a&gt; docs(&lt;code&gt;config&lt;/code&gt;): remove &amp;quot;&lt;code&gt;autosave&lt;/code&gt;&amp;quot; setting&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-cli/pull/484&quot;&gt;GH-484&lt;/a&gt; test(&lt;code&gt;config&lt;/code&gt;): use generic config key name&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-cli/pull/483&quot;&gt;GH-483&lt;/a&gt; refactor: remove dead code &amp;amp; simplify&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-cli/pull/486&quot;&gt;GH-486&lt;/a&gt; docs: undocument &amp;quot;&lt;code&gt;plugin save&lt;/code&gt;&amp;quot; command&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-cli/pull/488&quot;&gt;GH-488&lt;/a&gt; docs: remove mentions of &amp;quot;&lt;code&gt;cordova create&lt;/code&gt;&amp;quot; argument &amp;quot;config&amp;quot;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-cli/pull/487&quot;&gt;GH-487&lt;/a&gt; docs(&lt;code&gt;info&lt;/code&gt;): remove outdated remark about &lt;code&gt;info.txt&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-cli/pull/482&quot;&gt;GH-482&lt;/a&gt; docs: undocument &amp;quot;&lt;code&gt;platform save&lt;/code&gt;&amp;quot;, again&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-cli/pull/475&quot;&gt;GH-475&lt;/a&gt; refactor: Remove support for &lt;code&gt;&amp;lt;project&amp;gt;/.cordova/config.json&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-cli/pull/468&quot;&gt;GH-468&lt;/a&gt; docs: undocument &amp;quot;&lt;code&gt;hooks/&lt;/code&gt;&amp;quot; directory&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-cli/pull/467&quot;&gt;GH-467&lt;/a&gt; docs: undocument &amp;quot;&lt;code&gt;platform check&lt;/code&gt;&amp;quot; command&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-cli/pull/481&quot;&gt;GH-481&lt;/a&gt; chore: update &lt;code&gt;jasmine&lt;/code&gt; dependencies&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-cli/pull/480&quot;&gt;GH-480&lt;/a&gt; chore: drop node 6 and 8 support&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-cli/pull/479&quot;&gt;GH-479&lt;/a&gt; chore: bump version to 10.0.0-dev&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-cli/pull/477&quot;&gt;GH-477&lt;/a&gt; Avoid registering too many event listeners in tests&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-cli/pull/476&quot;&gt;GH-476&lt;/a&gt; Undocument removed &lt;code&gt;platform save&lt;/code&gt; command&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-cli/pull/473&quot;&gt;GH-473&lt;/a&gt; Fix blocked &lt;code&gt;telemetry&lt;/code&gt; calls&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-cli/pull/472&quot;&gt;GH-472&lt;/a&gt; fix: argument filtering in &lt;code&gt;telemetry.track&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-cli/pull/474&quot;&gt;GH-474&lt;/a&gt; Remove unsupported option &lt;code&gt;--copy-from&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-cli/pull/458&quot;&gt;GH-458&lt;/a&gt; chore: node deprecation warning for &amp;lt;10&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-cli/pull/471&quot;&gt;GH-471&lt;/a&gt; Add unit tests for the telemetry module&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-cli/pull/469&quot;&gt;GH-469&lt;/a&gt; Use &lt;code&gt;semver&lt;/code&gt; to check if using a prerelease version&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-cli/pull/470&quot;&gt;GH-470&lt;/a&gt; chore: add codecov to display coverage in GH&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-cli/pull/459&quot;&gt;GH-459&lt;/a&gt; chore: replace &lt;code&gt;istanbul&lt;/code&gt; with &lt;code&gt;nyc&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-cli/pull/427&quot;&gt;GH-427&lt;/a&gt; Minor fixes in &lt;code&gt;README&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-cli/pull/454&quot;&gt;GH-454&lt;/a&gt; chore: node warning on version &amp;lt; 8&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-cli/pull/430&quot;&gt;GH-430&lt;/a&gt; chore: add Node.js 12 to CI services&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-cli/pull/440&quot;&gt;GH-440&lt;/a&gt; docs(readme): remove duplicated instructions&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-cli/pull/433&quot;&gt;GH-433&lt;/a&gt; Updated the Supported Platforms&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-cli/pull/426&quot;&gt;GH-426&lt;/a&gt; Handle output error strings&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-cli/pull/423&quot;&gt;GH-423&lt;/a&gt; Cleaner solution to spy on latest CordovaLogger&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-cli/pull/421&quot;&gt;GH-421&lt;/a&gt; Fix &lt;code&gt;cordova config list&lt;/code&gt; command&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-cli/pull/419&quot;&gt;GH-419&lt;/a&gt; Fix &lt;code&gt;cordova config list&lt;/code&gt; command recognition&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-cli/pull/365&quot;&gt;GH-365&lt;/a&gt; Start requirements unit testing&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Tue, 04 Aug 2020 00:00:00 +0000</pubDate>
+        <link>https://cordova.apache.org/announcements/2020/08/04/cordova-cli-release-10.0.0.html</link>
+        <guid isPermaLink="true">https://cordova.apache.org/announcements/2020/08/04/cordova-cli-release-10.0.0.html</guid>
+        
+        <category>news</category>
+        
+        <category>releases</category>
+        
+        
+        <category>announcements</category>
+        
+      </item>
+    
+      <item>
+        <title>Cordova Lib 10.0.0 Released!</title>
+        <description>&lt;p&gt;We are happy to announce that we have just released &lt;code&gt;cordova-lib 10.0.0&lt;/code&gt;!&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/cordova-lib&quot;&gt;cordova-lib@10.0.0&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Release Highlights&lt;/h2&gt;
+
+&lt;p&gt;In addition to various improvements and fixes, this release has:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Removed the &lt;code&gt;plugin save&lt;/code&gt; command, which had become the default behaviour since version 7.0.&lt;/li&gt;
+&lt;li&gt;Updated the pinned platforms:
+
+&lt;ul&gt;
+&lt;li&gt;cordova-android@9.0.0&lt;/li&gt;
+&lt;li&gt;cordova-ios@6.1.0&lt;/li&gt;
+&lt;li&gt;cordova-osx@6.0.0&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Raised the minimum required NodeJS version for this release to 10.x.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Please report any issues you find at &lt;a href=&quot;http://issues.cordova.io/&quot;&gt;issues.cordova.io&lt;/a&gt;!&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h1&gt;Changes include:&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/846&quot;&gt;GH-846&lt;/a&gt; breaking: remove &lt;code&gt;cordova info&lt;/code&gt; logic from &lt;code&gt;lib&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/849&quot;&gt;GH-849&lt;/a&gt; breaking: bump dependencies&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/847&quot;&gt;GH-847&lt;/a&gt; chore: update dev dependencies&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/848&quot;&gt;GH-848&lt;/a&gt; chore: bump &lt;code&gt;cordova-eslint&lt;/code&gt; w/ automatic fixes&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/843&quot;&gt;GH-843&lt;/a&gt; test(&lt;code&gt;fixture-helper&lt;/code&gt;): install &lt;strong&gt;Android&lt;/strong&gt; platform by name again&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/844&quot;&gt;GH-844&lt;/a&gt; fix: remove unused dependency on &lt;code&gt;cordova-create&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/841&quot;&gt;GH-841&lt;/a&gt; chore: add &lt;code&gt;package-lock.json&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/840&quot;&gt;GH-840&lt;/a&gt; chore: use short notation in &lt;code&gt;package.json&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/839&quot;&gt;GH-839&lt;/a&gt; chore: stop testing with nightly&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/838&quot;&gt;GH-838&lt;/a&gt; chore: update &lt;strong&gt;Android&lt;/strong&gt; platform pinning to 9.0.0&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/837&quot;&gt;GH-837&lt;/a&gt; chore: update &lt;strong&gt;OSX&lt;/strong&gt; platform pinning to 6.0.0&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/836&quot;&gt;GH-836&lt;/a&gt; chore: update &lt;strong&gt;iOS&lt;/strong&gt; platform pinning to 6.1.0&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/835&quot;&gt;GH-835&lt;/a&gt; GH-832: Look at devDeps for restoring platforms&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/833&quot;&gt;GH-833&lt;/a&gt; breaking: upgrade cordova dependencies for next major&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/831&quot;&gt;GH-831&lt;/a&gt; test: use &lt;code&gt;expectAsync&lt;/code&gt; for rejections&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/825&quot;&gt;GH-825&lt;/a&gt; test(e2e): improve &lt;code&gt;HooksRunner.spec&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/828&quot;&gt;GH-828&lt;/a&gt; chore: consolidate eslint configs&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/803&quot;&gt;GH-803&lt;/a&gt; test: move &lt;code&gt;cordova/platform/{platform =&amp;gt; addHelper}&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/827&quot;&gt;GH-827&lt;/a&gt; fix: plugin installation from &lt;code&gt;git&lt;/code&gt; url w/ &lt;code&gt;semver&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/826&quot;&gt;GH-826&lt;/a&gt; test: use &lt;code&gt;fs.copySync&lt;/code&gt; for increased performance&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/823&quot;&gt;GH-823&lt;/a&gt; test(e2e): re-enable HooksRunner#12 and move it to plugin#14&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/824&quot;&gt;GH-824&lt;/a&gt; style: fix linting violations&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/821&quot;&gt;GH-821&lt;/a&gt; feat: proper support for scoped plugins&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/822&quot;&gt;GH-822&lt;/a&gt; refactor: &lt;code&gt;eslint&lt;/code&gt; setup&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/820&quot;&gt;GH-820&lt;/a&gt; refactor: remove stub interface to &lt;code&gt;cordova-create&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/819&quot;&gt;GH-819&lt;/a&gt; refactor: use &lt;code&gt;execa&lt;/code&gt;&amp;#39;s cross-platform shebang support in &lt;code&gt;HooksRunner&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/812&quot;&gt;GH-812&lt;/a&gt; chore: replace &lt;code&gt;superspawn&lt;/code&gt; with &lt;code&gt;execa&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/781&quot;&gt;GH-781&lt;/a&gt; chore: remove &lt;code&gt;plugin save&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/780&quot;&gt;GH-780&lt;/a&gt; chore: deprecate &lt;code&gt;plugin save&lt;/code&gt; command&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/818&quot;&gt;GH-818&lt;/a&gt; Extend and improve plugin tests in preparation of supporting scoped plugins&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/810&quot;&gt;GH-810&lt;/a&gt; chore: bump production dependencies&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/816&quot;&gt;GH-816&lt;/a&gt; Simplify &lt;code&gt;jasmine&lt;/code&gt; configuration&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/817&quot;&gt;GH-817&lt;/a&gt; Remove dead code in &lt;code&gt;integration-tests/plugin.spec&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/815&quot;&gt;GH-815&lt;/a&gt; Do not spawn child process to get platform version&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/813&quot;&gt;GH-813&lt;/a&gt; &lt;code&gt;plugman_fetch.spec&lt;/code&gt; cleanup&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/814&quot;&gt;GH-814&lt;/a&gt; Remove obsolete and duplicate ignore entries&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/809&quot;&gt;GH-809&lt;/a&gt; chore: improve npm ignore list&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/811&quot;&gt;GH-811&lt;/a&gt; chore: update &lt;code&gt;jasmine&lt;/code&gt; dependencies&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/808&quot;&gt;GH-808&lt;/a&gt; Remove unused module plugman/platforms/common&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/807&quot;&gt;GH-807&lt;/a&gt; Break dependency cycles&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/804&quot;&gt;GH-804&lt;/a&gt; Fix &lt;code&gt;cordova/emulate.spec&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/806&quot;&gt;GH-806&lt;/a&gt; Remove unused exports from &lt;code&gt;cordova/util&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/805&quot;&gt;GH-805&lt;/a&gt; Remove support for obsolete &lt;code&gt;&amp;lt;project&amp;gt;/.cordova/config.json&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/802&quot;&gt;GH-802&lt;/a&gt; Minor code cleanup&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/797&quot;&gt;GH-797&lt;/a&gt; Do not run legacy hooks from dirs anymore&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/800&quot;&gt;GH-800&lt;/a&gt; Remove &lt;code&gt;platform.check&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/765&quot;&gt;GH-765&lt;/a&gt; Remove code to handle plugins that were added by cordova@&amp;lt;5.4.0&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/766&quot;&gt;GH-766&lt;/a&gt; Remove parts of plugman that have been moved to the plugman repo&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/772&quot;&gt;GH-772&lt;/a&gt; Replace underscore with modern JS&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/799&quot;&gt;GH-799&lt;/a&gt; chore: drop node 6 and 8 support&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/798&quot;&gt;GH-798&lt;/a&gt; chore: bump version to 10.0.0-dev&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/770&quot;&gt;GH-770&lt;/a&gt; Use up-to-date fixtures in tests&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/796&quot;&gt;GH-796&lt;/a&gt; HooksRunner code &amp;amp; spec cleanup&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/791&quot;&gt;GH-791&lt;/a&gt; fix: error message during plugin installation w/ missing engine&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/777&quot;&gt;GH-777&lt;/a&gt; chore: add Node.js 12 to CI services&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/786&quot;&gt;GH-786&lt;/a&gt; Quick workaround for e2e failure on AppVeyor CI&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/783&quot;&gt;GH-783&lt;/a&gt; &lt;code&gt;nyc@14&lt;/code&gt; update in devDependencies&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/775&quot;&gt;GH-775&lt;/a&gt; chore: cleanup &lt;code&gt;plugman.createPackageJson&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/767&quot;&gt;GH-767&lt;/a&gt; Simpler and better &lt;code&gt;cordova/util.getPlatformApiFunction&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/774&quot;&gt;GH-774&lt;/a&gt; Make &lt;code&gt;src/plugman/init-defaults.js&lt;/code&gt; lintable&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/773&quot;&gt;GH-773&lt;/a&gt; Have &lt;code&gt;plugman.createPackageJson&lt;/code&gt; create file in plugin dir, not in cwd&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/771&quot;&gt;GH-771&lt;/a&gt; Prevent masking of errors during testing&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/768&quot;&gt;GH-768&lt;/a&gt; Proper async code in &lt;code&gt;src/plugman/createpackagejson.js&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/764&quot;&gt;GH-764&lt;/a&gt; chore: expressive &lt;code&gt;pkgJson.spec&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/763&quot;&gt;GH-763&lt;/a&gt; Remove unnecessary spy&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/762&quot;&gt;GH-762&lt;/a&gt; Remove unused fixtures&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/761&quot;&gt;GH-761&lt;/a&gt; chore: various test improvements
+
+&lt;ul&gt;
+&lt;li&gt;Fix some test descriptions in &lt;code&gt;cordova/util.spec&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Stop &lt;code&gt;cordova/util.spec&lt;/code&gt; from messing with the user&amp;#39;s home directory!&lt;/li&gt;
+&lt;li&gt;Proper temp folder usage in &lt;code&gt;cordova/util.spec&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Remove outdated test from &lt;code&gt;cordova/util.spec&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Remove &lt;code&gt;rewire&lt;/code&gt;/&lt;code&gt;revert&lt;/code&gt; anti-pattern&lt;/li&gt;
+&lt;li&gt;Remove &lt;code&gt;superspawn&lt;/code&gt; faking from &lt;code&gt;HooksRunner.spec&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-lib/pull/760&quot;&gt;GH-760&lt;/a&gt; Minor cleanup of CI configs&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Tue, 28 Jul 2020 00:00:00 +0000</pubDate>
+        <link>https://cordova.apache.org/announcements/2020/07/28/cordova-lib-release-10.0.0.html</link>
+        <guid isPermaLink="true">https://cordova.apache.org/announcements/2020/07/28/cordova-lib-release-10.0.0.html</guid>
+        
+        <category>news</category>
+        
+        <category>releases</category>
+        
+        
+        <category>announcements</category>
+        
+      </item>
+    
+      <item>
+        <title>Splash Screen Plugin Released!</title>
+        <description>&lt;p&gt;We are happy to announce that we have just released an update to our Splash Screen plugin!&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.npmjs.org/package/cordova-plugin-splashscreen&quot;&gt;cordova-plugin-splashscreen@6.0.0&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Release Highlights&lt;/h2&gt;
+
+&lt;h3&gt;Splash Screen&lt;/h3&gt;
+
+&lt;p&gt;In this major release, the iOS related source code has been completely removed since it has been integrated into the core of the Cordova-iOS 6.x platform.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-plugin-splashscreen/pull/263&quot;&gt;GH-263&lt;/a&gt; breaking: remove &lt;strong&gt;iOS&lt;/strong&gt; platform code from plugin repo&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-plugin-splashscreen/pull/282&quot;&gt;GH-282&lt;/a&gt; fix: js &lt;code&gt;clobber&lt;/code&gt; only on supported platforms&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!--more--&gt;
+
+&lt;h1&gt;Changes include:&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-plugin-splashscreen/pull/282&quot;&gt;GH-282&lt;/a&gt; fix: js &lt;code&gt;clobber&lt;/code&gt; only on supported platforms&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-plugin-splashscreen/pull/281&quot;&gt;GH-281&lt;/a&gt; chore: adds &lt;code&gt;package-lock&lt;/code&gt; file&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-plugin-splashscreen/pull/280&quot;&gt;GH-280&lt;/a&gt; doc(android): various improvements including size specs&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-plugin-splashscreen/pull/200&quot;&gt;GH-200&lt;/a&gt; fix(windows): implementation structure&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-plugin-splashscreen/pull/279&quot;&gt;GH-279&lt;/a&gt; chore: add missing supported platform &lt;strong&gt;Browser&lt;/strong&gt; to &lt;code&gt;npm&lt;/code&gt; keywords&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-plugin-splashscreen/pull/278&quot;&gt;GH-278&lt;/a&gt; chore: update &lt;code&gt;engine&lt;/code&gt; checks to cover newer versions&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-plugin-splashscreen/pull/277&quot;&gt;GH-277&lt;/a&gt; breaking: replace &lt;code&gt;jshint&lt;/code&gt; with &lt;code&gt;eslint&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-plugin-splashscreen/pull/276&quot;&gt;GH-276&lt;/a&gt; breaking: drop &lt;code&gt;node&lt;/code&gt; &lt;code&gt;engine&lt;/code&gt; requirement&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-plugin-splashscreen/pull/275&quot;&gt;GH-275&lt;/a&gt; chore: cleanup repo&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-plugin-splashscreen/pull/274&quot;&gt;GH-274&lt;/a&gt; breaking: bump &lt;code&gt;engine&lt;/code&gt; restriction for cordova dependencies&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-plugin-splashscreen/pull/263&quot;&gt;GH-263&lt;/a&gt; breaking: remove &lt;strong&gt;iOS&lt;/strong&gt; platform code from plugin repo&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/apache/cordova-plugin-splashscreen/pull/267&quot;&gt;GH-267&lt;/a&gt; test: force &lt;code&gt;cordova-ios&lt;/code&gt;@^5.1.1&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Tue, 21 Jul 2020 00:00:00 +0000</pubDate>
+        <link>https://cordova.apache.org/news/2020/07/21/splashscreen-plugin-release.html</link>
+        <guid isPermaLink="true">https://cordova.apache.org/news/2020/07/21/splashscreen-plugin-release.html</guid>
+        
+        <category>release</category>
+        
+        <category>plugins</category>
+        
+        
+        <category>news</category>
+        
+      </item>
+    
+      <item>
+        <title>UPDATED: How to handle the &#39;Deprecated API Usage - UIWebView&#39; warning while uploading to the App Store</title>
+        <description>&lt;p&gt;We recently posted &lt;a href=&quot;/howto/2020/03/18/wkwebviewonly.html&quot;&gt;instructions&lt;/a&gt; how to update your apps to remove all &lt;code&gt;UIWebView&lt;/code&gt; references, because Apple now rejects all apps using &lt;code&gt;UIWebView&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;We are talking about this warning:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;ITMS-90809: Deprecated API Usage - Apple will stop accepting submissions of apps that use UIWebView APIs.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Some things have changed and new versions of cordova-ios have been released since the last post.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h2&gt;Update cordova-ios to version 6.0.0 or newer&lt;/h2&gt;
+
+&lt;p&gt;Please update to the latest &lt;code&gt;cordova-ios&lt;/code&gt; version to get the best compatibility with recent iOS changes. As of this writing the current version is 6.1.0. Version 6.0.0 of cordova-ios moved &lt;code&gt;WKWebView&lt;/code&gt; support into &lt;code&gt;cordova-ios&lt;/code&gt; and removed &lt;code&gt;UIWebView&lt;/code&gt; code. Due to this change, the &lt;code&gt;cordova-plugin-wkwebview-engine&lt;/code&gt; plugin is obsolete and will not work with this release. If you have this plugin installed, it is safe to remove with &lt;code&gt;cordova plugin remove cordova-plugin-wkwebview-engine&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Additionaly, &lt;code&gt;WKURLSchemeHandler&lt;/code&gt; support has been introduced with this release. Serving your app content through a custom scheme fixes CORS issues that exist because of the strict security policies that &lt;code&gt;WKWebView&lt;/code&gt; has applied to the &lt;code&gt;file&lt;/code&gt; scheme. You can easily configure your Cordova project to use a custom scheme by setting the preference options &lt;code&gt;scheme&lt;/code&gt; and &lt;code&gt;hostname&lt;/code&gt; in the &lt;code&gt;config.xml&lt;/code&gt; file. &lt;strong&gt;Bear in mind that running your app with a custom URL scheme changes the origin of your web code and you will lose access to web storage, such as local storage, indexed DB, etc.&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;preference&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;scheme&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;app&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;preference&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;hostname&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;localhost&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;It is important to know that with the introduction of &lt;code&gt;WKURLSchemeHandler&lt;/code&gt;, iOS 10 support has been dropped.&lt;/p&gt;
+
+&lt;h2&gt;Still getting the warning?&lt;/h2&gt;
+
+&lt;p&gt;If you are still getting the warning, it is most likely one or more plugins in your project still references &lt;code&gt;UIWebView&lt;/code&gt;. You will need to identify which plugins contain &lt;code&gt;UIWebView&lt;/code&gt; code and contact those plugin&amp;#39;s developers through their support channel (for instance their plugin&amp;#39;s repo). They will need to fix their plugins by either removing the references or wrap them with the new flag.&lt;/p&gt;
+
+&lt;h2&gt;Using other WKWebView plugin&lt;/h2&gt;
+
+&lt;p&gt;The official Apache WKWebView plugin is no longer needed with these &lt;code&gt;cordova-ios&lt;/code&gt; versions since &lt;code&gt;WKWebView&lt;/code&gt; has been integrated and &lt;code&gt;UIWebView&lt;/code&gt; is removed. There are other WKWebView plugins that can be used. Make sure they have been updated and use the latest version. If you have any issues or usage questions with their plugins, please read their docs and request help through their support channels.&lt;/p&gt;
+
+&lt;h2&gt;CORS issues&lt;/h2&gt;
+
+&lt;p&gt;If you experience any CORS issues Cordova PMC member Norman Breau published a &lt;a href=&quot;https://breautek.com/2020/07/14/enabling-cors/&quot;&gt;post on his blog&lt;/a&gt; with a good explanation of CORS.&lt;/p&gt;
+
+&lt;h2&gt;Weview issues&lt;/h2&gt;
+
+&lt;p&gt;If using a custom scheme, &lt;code&gt;WKWebView&lt;/code&gt; won&amp;#39;t allow to load file urls in img/video tags (nor fetch them, nor anything). &lt;code&gt;cordova-ios&lt;/code&gt; added a helper method to convert file URLs to URLs that have the scheme and &lt;code&gt;WKWebView&lt;/code&gt; can understand.&lt;/p&gt;
+
+&lt;p&gt;window.WkWebView.convertFilePath(&amp;#39;your/file/path&amp;#39;);&lt;/p&gt;
+</description>
+        <pubDate>Sat, 18 Jul 2020 00:00:00 +0000</pubDate>
+        <link>https://cordova.apache.org/howto/2020/07/18/uiwebview-warning.html</link>
+        <guid isPermaLink="true">https://cordova.apache.org/howto/2020/07/18/uiwebview-warning.html</guid>
+        
+        <category>ios</category>
+        
+        
+        <category>howto</category>
+        
+      </item>
+    
+  </channel>
+</rss>
