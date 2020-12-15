@@ -1,0 +1,62 @@
+{
+  "name": "cordova-website",
+  "version": "0.0.1",
+  "description": "website for cordova.apache.org",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "npm run eslint && gulp build",
+    "serve": "gulp serve --prod",
+    "clean": "gulp clean",
+    "update-docs": "gulp snapshot",
+    "build": "gulp build --prod",
+    "eslint": "eslint tools *.js"
+  },
+  "author": "Apache Software Foundation",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "baconjs": "^0.7.70",
+    "browser-sync": "^2.8.0",
+    "browserify": "^10.2.4",
+    "chalk": "^2.3.1",
+    "classnames": "^2.1.2",
+    "envify": "^3.4.0",
+    "fs-extra": "^0.11.1",
+    "gulp": "^4.0.2",
+    "gulp-footer": "^1.0.5",
+    "gulp-header": "1.2.2",
+    "gulp-less": "^3.0.3",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.4",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^1.2.0",
+    "gulp-util": "^3.0.5",
+    "js-yaml": "^3.2.2",
+    "ncp": "^2.0.0",
+    "optimist": "^0.6.1",
+    "preact": "^8.2.5",
+    "preact-compat": "^3.17.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^2.0.0"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-plugin-transform-h-jsx": "^1.0.0",
+    "babel-preset-react": "^6.24.1",
+    "babelify": "^7.3.0",
+    "eslint": "^5.16.0",
+    "eslint-config-semistandard": "^13.0.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^9.0.1",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "glob": "^7.0.3",
+    "gulp-htmllint": "^0.0.5",
+    "simplecrawler": "^0.5.2"
+  },
+  "repository": "github:apache/cordova-docs",
+  "bugs": "https://github.com/apache/cordova-docs/issues",
+  "homepage": "https://cordova.apache.org"
+}

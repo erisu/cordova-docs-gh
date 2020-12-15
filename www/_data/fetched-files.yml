@@ -1,0 +1,115 @@
+# REFERENCE ENTRY:
+# -
+#     src:                                                  # required
+#         repoName:    "apache/cordova-cli"                 # required
+#         packageName: "cordova"                            # if empty: second part of repoName
+#         commit:      "master"                             # if empty: latest in NPM
+#         path:        "relative/path/to/file/in/repo.md"   # if empty: "README.md"
+#     dest:                                                 # required
+#         path:  "relative/path/in/docs/version.md"         # required
+-
+    src:
+        repoName: "apache/cordova-cli"
+        packageName: "cordova"
+        commit: "master"
+        path: "doc/readme.md"
+    dest:
+        path: "reference/cordova-cli/index.md"
+-
+    src:
+        repoName: "apache/cordova-plugin-battery-status"
+        packageName: "cordova-plugin-battery-status"
+        commit: "master"
+    dest:
+        path: "reference/cordova-plugin-battery-status/index.md"
+-
+    src:
+        repoName: "apache/cordova-plugin-camera"
+        packageName: "cordova-plugin-camera"
+        commit: "master"
+    dest:
+        path: "reference/cordova-plugin-camera/index.md"
+-
+    src:
+        repoName: "apache/cordova-plugin-device"
+        packageName: "cordova-plugin-device"
+        commit: "master"
+    dest:
+        path: "reference/cordova-plugin-device/index.md"
+-
+    src:
+        repoName: "apache/cordova-plugin-dialogs"
+        packageName: "cordova-plugin-dialogs"
+        commit: "master"
+    dest:
+        path: "reference/cordova-plugin-dialogs/index.md"
+-
+    src:
+        repoName: "apache/cordova-plugin-file"
+        packageName: "cordova-plugin-file"
+        commit: "master"
+    dest:
+        path: "reference/cordova-plugin-file/index.md"
+-
+    src:
+        repoName: "apache/cordova-plugin-geolocation"
+        packageName: "cordova-plugin-geolocation"
+        commit: "master"
+    dest:
+        path: "reference/cordova-plugin-geolocation/index.md"
+-
+    src:
+        repoName: "apache/cordova-plugin-inappbrowser"
+        packageName: "cordova-plugin-inappbrowser"
+        commit: "master"
+    dest:
+        path: "reference/cordova-plugin-inappbrowser/index.md"
+-
+    src:
+        repoName: "apache/cordova-plugin-media"
+        packageName: "cordova-plugin-media"
+        commit: "master"
+    dest:
+        path: "reference/cordova-plugin-media/index.md"
+-
+    src:
+        repoName: "apache/cordova-plugin-media-capture"
+        packageName: "cordova-plugin-media-capture"
+        commit: "master"
+    dest:
+        path: "reference/cordova-plugin-media-capture/index.md"
+-
+    src:
+        repoName: "apache/cordova-plugin-network-information"
+        packageName: "cordova-plugin-network-information"
+        commit: "master"
+    dest:
+        path: "reference/cordova-plugin-network-information/index.md"
+-
+    src:
+        repoName: "apache/cordova-plugin-splashscreen"
+        packageName: "cordova-plugin-splashscreen"
+        commit: "master"
+    dest:
+        path: "reference/cordova-plugin-splashscreen/index.md"
+-
+    src:
+        repoName: "apache/cordova-plugin-vibration"
+        packageName: "cordova-plugin-vibration"
+        commit: "master"
+    dest:
+        path: "reference/cordova-plugin-vibration/index.md"
+-
+    src:
+        repoName: "apache/cordova-plugin-statusbar"
+        packageName: "cordova-plugin-statusbar"
+        commit: "master"
+    dest:
+        path: "reference/cordova-plugin-statusbar/index.md"
+-
+    src:
+        repoName: "apache/cordova-plugin-screen-orientation"
+        packageName: "cordova-plugin-screen-orientation"
+        commit: "master"
+    dest:
+        path: "reference/cordova-plugin-screen-orientation/index.md"

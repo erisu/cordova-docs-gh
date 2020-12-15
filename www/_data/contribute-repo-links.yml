@@ -1,0 +1,105 @@
+-   title: Platforms
+    projects:
+
+    -   project: Android
+        mirror: https://github.com/apache/cordova-android
+
+    -   project: iOS
+        mirror: https://github.com/apache/cordova-ios
+
+    -   project: Mac OS X
+        mirror: https://github.com/apache/cordova-osx
+
+    -   project: Windows (desktop)
+        mirror: https://github.com/apache/cordova-windows
+
+    -   project: Browser
+        mirror: https://github.com/apache/cordova-browser
+
+    -   project: Electron
+        mirror: https://github.com/apache/cordova-electron
+
+-   title: Plugins
+    projects:
+    -   project: Battery Status
+        mirror: https://github.com/apache/cordova-plugin-battery-status
+
+    -   project: Camera
+        mirror: https://github.com/apache/cordova-plugin-camera
+
+    -   project: Device
+        mirror: https://github.com/apache/cordova-plugin-device
+
+    -   project: Dialogs
+        mirror: https://github.com/apache/cordova-plugin-dialogs
+
+    -   project: File
+        mirror: https://github.com/apache/cordova-plugin-file
+
+    -   project: Geolocation
+        mirror: https://github.com/apache/cordova-plugin-geolocation
+
+    -   project: In-App Browser
+        mirror: https://github.com/apache/cordova-plugin-inappbrowser
+
+    -   project: Media
+        mirror: https://github.com/apache/cordova-plugin-media
+
+    -   project: Media Capture
+        mirror: https://github.com/apache/cordova-plugin-media-capture
+
+    -   project: Network Information
+        mirror: https://github.com/apache/cordova-plugin-network-information
+
+    -   project: Screen Orientation
+        mirror: https://github.com/apache/cordova-plugin-screen-orientation
+
+    -   project: Splashscreen
+        mirror: https://github.com/apache/cordova-plugin-splashscreen
+
+    -   project: Statusbar
+        mirror: https://github.com/apache/cordova-plugin-statusbar
+
+    -   project: Vibration
+        mirror: https://github.com/apache/cordova-plugin-vibration
+
+-   title: Other
+    projects:
+    -   project: Cordova Docs
+        mirror: https://github.com/apache/cordova-docs
+
+    -   project: Cordova JS (JavaScript API)
+        mirror: https://github.com/apache/cordova-js
+
+    -   project: Cordova CLI
+        mirror: https://github.com/apache/cordova-cli
+
+    -   project: Cordova Plugman (Plugin Manager)
+        mirror: https://github.com/apache/cordova-plugman
+
+    -   project: Cordova Lib (Common Code)
+        mirror: https://github.com/apache/cordova-lib
+
+    -   project: Cordova Common
+        mirror: https://github.com/apache/cordova-common
+
+    -   project: Cordova Serve
+        mirror: https://github.com/apache/cordova-serve
+
+    -   project: Cordova Create
+        mirror: https://github.com/apache/cordova-create
+
+    -   project: Cordova Fetch
+        mirror: https://github.com/apache/cordova-fetch
+
+    -   project: Cordova Mobile Spec (Test Suite)
+        mirror: https://github.com/apache/cordova-mobile-spec
+
+    -   project: Cordova Paramedic (Test Automation)
+        mirror: https://github.com/apache/cordova-paramedic
+
+    -   project: Cordova Hello World (Sample App)
+        mirror: https://github.com/apache/cordova-app-hello-world
+
+    -   project: Cordova Coho (Release Tool)
+        mirror: https://github.com/apache/cordova-coho

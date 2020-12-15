@@ -1,0 +1,14 @@
+baseurl: ""
+default_linked_docs_version: dev
+destination: build-dev
+
+exclude:
+    - static/css-src
+    - static/plugins
+    - docs/
+
+include:
+    - docs/en/dev
+    - docs/ru/dev
+    - docs/fr/dev
+    
