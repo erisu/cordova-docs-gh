@@ -2583,9 +2583,9 @@ Although most of the plugin code was written when an earlier spec was current:
 <p>For an overview of other storage options, refer to Cordova&#39;s
 <a href="http://cordova.apache.org/docs/en/latest/cordova/storage/storage.html">storage guide</a>.</p>
 
-<p>This plugin defines global <code>cordova.file</code> object.</p>
+<p>This plugin defines a global <code>cordova.file</code> object.</p>
 
-<p>Although in the global scope, it is not available until after the <code>deviceready</code> event.</p>
+<p>Although the object is in the global scope, it is not available to applications until after the <code>deviceready</code> event fires.</p>
 <div class="highlight"><pre><code class="language-" data-lang="">document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() {
     console.log(cordova.file);
